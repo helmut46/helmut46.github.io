@@ -1,0 +1,86 @@
+@font-face 
+{
+    font-family: 'open_sansregular';
+    src: url('../fonts/openSans/opensans_regular_macroman/OpenSans-Regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: 'open_sansbold';
+    src:  url('../fonts/openSans/opensans_bold_macroman/OpenSans-Bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face 
+{
+    font-family: 'open_sanslight';
+    src: url('../fonts/openSans/opensans_light_macroman/OpenSans-Light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sanssemibold';
+    src: url('../fonts/openSans/opensans_semibold_macroman/OpenSans-Semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'blanks_script_personal_usBdIt';
+    src: url('../fonts/blanks-script-font/blanksscriptpersonalusebdit-jem6o-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Alex_Brush';
+    src: url('../fonts/AlexBrush/AlexBrush-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body
+{
+	background-color: #f8f7f4;
+	font-size: 1rem;
+}
+/* navigation */
+header
+{
+	font-family: sans-serif;
+	padding: 1em;
+}
+
+.my-logo h2
+{
+	 font-family: 'Alex_Brush', Arial, sans-serif;
+	 /*font-size: 2rem;*/
+	 letter-spacing: 2px;
+	 /*border: 1px solid black;*/
+	 font-weight: bolder;
+	 font-size: 1.7rem;
+}
+
+nav
+{
+	display: flex;
+	justify-content: space-between;
+	text-transform: capitalize;
+	/*border: 1px solid black;*/
+	align-items: center;
+    
+}
+
+nav ul
+{
+   width: 30%;
+   display: flex;
+   justify-content: space-between;
+   /*border: 1px solid black;*/
+}
+
