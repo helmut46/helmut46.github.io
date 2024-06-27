@@ -31,13 +31,6 @@
 }
 
 @font-face {
-    font-family: 'blanks_script_personal_usBdIt';
-    src: url('../fonts/blanks-script-font/blanksscriptpersonalusebdit-jem6o-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
     font-family: 'Alex_Brush';
     src: url('../fonts/AlexBrush/AlexBrush-Regular.ttf') format('truetype');
     font-weight: normal;
@@ -49,11 +42,25 @@ body
 	background-color: #f8f7f4;
 	font-size: 1rem;
 }
-/* navigation */
+
+main
+{
+    min-height: 100vh;
+    border: 1px solid black;
+}
+
+/*-----------------------
+ navigation 
+ ------------------------*/
 header
 {
 	font-family: sans-serif;
-	padding: 1em;
+	padding: .8em;
+    background-color: #eee;
+    position: fixed;
+    left: 0;
+    right: 0;
+    display: none;
 }
 
 .my-logo h2
@@ -84,3 +91,191 @@ nav ul
    /*border: 1px solid black;*/
 }
 
+/*------------------- 
+hamburger menu 
+---------------------*/
+.hamburger 
+{
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: none;
+}
+
+.line 
+{
+  fill:none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke:#000;
+  stroke-width:5.5;
+  stroke-linecap:round;
+}
+
+.ham-style .top 
+{
+  stroke-dasharray: 40 130;
+}
+
+.ham-style .middle 
+{
+  stroke-dasharray: 40 140;
+}
+
+.ham-style .bottom 
+{
+  stroke-dasharray: 40 205;
+}
+.ham-style.active .top 
+{
+  stroke-dasharray: 75 130;
+  stroke-dashoffset: -63px;
+}
+.ham-style.active .middle 
+{
+  stroke-dashoffset: -102px;
+}
+
+.ham-style.active .bottom 
+{
+  stroke-dasharray: 110 205;
+  stroke-dashoffset: -86px;
+}
+
+/*----------------- 
+hero-section 
+------------------*/
+#hero
+{
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.content
+{
+     border: 1px solid black;
+     width: 50%;
+     /*text-align: center;*/
+}
+
+.content p
+{
+   text-transform: capitalize;
+   font-size: 2vw;  
+   text-align: center;
+}
+
+.content h3
+{
+     font-size: 2vw;  
+     text-align: center;
+}
+
+.cursor
+{
+   display: inline-block;
+   background-color: black;
+   width: 2px;
+  animation: blinker 800ms infinite;
+}
+
+.cursor.typing-true 
+{
+  animation: none;
+}
+
+@keyframes blinker {
+          0% { background-color: black; }
+          50% { background-color: transparent; }
+          100% { background-color: black; }
+}
+
+
+
+
+
+
+
+
+/*----------------------------------
+ Breakpoints / responsive style 
+ ----------------------------------*/
+
+@media screen and (max-width: 1200px) 
+{
+  
+}
+
+@media screen and (max-width: 992px) 
+{
+   nav ul
+   {
+      width: 40%;
+   }
+   .hamburger
+   {
+     display: none;
+   }
+}
+
+@media screen and (max-width: 991px) 
+{
+   nav ul
+   {
+      width: 50%;
+   }
+}
+
+@media screen and (max-width: 768px) 
+{
+    nav ul
+   {
+      width: 70%;
+      position: none;
+   }
+}
+
+@media screen and (max-width: 480px) 
+{
+   header
+   {
+     padding: .5em;
+
+   }
+
+    nav
+   {
+      position: relative;
+   }
+
+   nav ul
+   {
+      flex-direction: column;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      left: 200%;
+      height: 100vh;
+      z-index: -1;
+      justify-content: space-evenly;
+      transition: all .5s;
+   }
+
+    nav ul.active
+    {
+         left: 0;
+         background-color: lightblue;
+         height: 100vh;
+         width: 100%;
+    }
+
+   .hamburger
+   {
+     display: block;
+   }
+}
