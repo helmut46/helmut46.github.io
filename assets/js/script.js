@@ -8,7 +8,7 @@ hamBtn.addEventListener('click', function(){
 
 // typed Effect
    const typedSpan = document.getElementById("typed")
-  const totype = ["Front-End Web Developer", "Web Design", "Blogger"]
+  const totype = ["Front-End", "Web Design", "Blogger"]
 
 const delayTyping_char = 200;
 const delayErasing_text = 150;
