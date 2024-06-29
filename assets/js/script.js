@@ -6,6 +6,19 @@ hamBtn.addEventListener('click', function(){
 	   navBtn.classList.toggle('active');
 });
 
+// navbar background color on scroll
+const header = document.querySelector('header');
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 20) { // Adjust this value based on when you want the color to change
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+});
+
+
+
+
 // typed Effect
    const typedSpan = document.getElementById("typed")
   const totype = ["Front-End", "Web Design", "Blogger"]
