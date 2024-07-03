@@ -268,7 +268,7 @@ about section
 section#about
 {
      height: 100vh;
-     /*border: 1px solid black;*/
+     border: 1px solid black;
      display: flex;
      justify-content: center;
      flex-direction: column;
@@ -281,7 +281,7 @@ section#about
     font-family: 'open_sansbold', Arial, sans-serif;
     font-size: 1.8rem;
     text-transform: capitalize;
-    margin-bottom: 10px;
+    /*margin-bottom: 10px;*/
 }
 
 .content-about
@@ -295,7 +295,7 @@ section#about
 
 .my-picture
 {
-     width: 25%;
+     width: 30%;
      height: auto;
 }
 
@@ -407,7 +407,12 @@ section skills
   justify-content: space-evenly;
 }
 .basic,
-.framework
+.framework,
+.backend,
+.design,
+.database,
+.extra
+
 {
      text-align: center;
      text-transform: capitalize;
