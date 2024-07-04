@@ -268,7 +268,7 @@ about section
 section#about
 {
      height: 100vh;
-     border: 1px solid black;
+     /*border: 1px solid black;*/
      display: flex;
      justify-content: center;
      flex-direction: column;
@@ -322,6 +322,7 @@ section#about
      padding: 1em 3em; 
      letter-spacing: 1.5px;
      transition: all .5s;
+     font-family: 'open_sanslight', Arial, sans-serif;
 }
 
 .btn-sm
@@ -430,6 +431,94 @@ section skills
     margin: 10px 0;
 }
 
+/*--------------------------
+ portfolio
+---------------------------*/
+#portfolio
+{
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     align-items: center;
+     /*border: 1px solid black;*/
+}
+
+
+#portfolio h2
+{
+    font-family: 'open_sansbold', Arial, sans-serif;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    /*margin-bottom: 30px;*/
+}
+
+#portfolio p
+{
+     width: 100%;
+     /*border: 1px solid black;*/
+     display: flex;
+     padding: 1em;
+     line-height: 1.2;
+     justify-content: center;
+}
+
+.portfolio-details
+{
+     /*width: 50%;*/
+     display: flex;
+     padding: 1em;
+     column-gap: 10px;
+}
+
+.card-item
+{
+     background-color: #fffcfc;
+     padding: 10px;
+     border-radius: 8px;
+     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
+     border: 2px solid transparent;
+     /*border: 2px solid black;*/
+
+
+
+}
+
+.card-item img
+{
+     width: 100%;
+     aspect-ratio: 16 / 9;
+     border-radius: 8px;
+}
+
+.card-item h3
+{
+   font-family: 'open_sanssemibold', Arial, sans-serif;
+   text-transform: capitalize;
+    font-size: 1.1rem;
+    margin-top: 30px;
+}
+
+.card-item .p
+{
+     display: inline-block;
+     margin-top: 10px;
+}
+
+.button-portfolio
+{
+    /*border: 1px solid black;*/
+    /*width: 100%;*/
+    display: flex;
+    justify-content: space-evenly;
+    column-gap: 15px;
+}
+
+.button-portfolio a
+{
+    font-size: .7rem;
+    text-transform: capitalize;
+}
 
 /*----------------------------------
  Breakpoints / responsive style 
