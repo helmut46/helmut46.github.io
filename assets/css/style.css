@@ -166,7 +166,8 @@ hero-section
      /*background-image: url('../images/hero-image.jpg');*/
      background-size: cover;
      background-image: linear-gradient(to bottom, rgba(0, 0, 0, .8), rgba(0, 0, 0, .6)), url('../images/hero-image.jpg') ;
-     background-color: black;
+     background-color: #f8f7f4;
+     
 }
 
 .content
@@ -260,6 +261,7 @@ header.scrolled
 
 .custom-shape-divider-bottom-1719830316 .shape-fill {
     fill: #f8f7f4;
+    color: #f8f7f4;
 }
 
 /*--------------------------
@@ -390,7 +392,7 @@ section skills
 .skill-details
 {
     /*border: 1px solid black;*/
-    width: 50%;
+    min-width: 50%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -417,11 +419,17 @@ section skills
 {
      text-align: center;
      text-transform: capitalize;
+     /*border: 1px solid black;*/
+     width: 100%;
+
 }
 
 .icon
 {
     width: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+
 }
 
 .title-skills
@@ -461,6 +469,8 @@ section skills
      padding: 1em;
      line-height: 1.2;
      justify-content: center;
+    font-family: 'open_sansregular', Arial, sans-serif;
+
 }
 
 .portfolio-details
@@ -469,6 +479,7 @@ section skills
      display: flex;
      padding: 1em;
      column-gap: 10px;
+     max-width: 900px;
 }
 
 .card-item
@@ -479,9 +490,6 @@ section skills
      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
      border: 2px solid transparent;
      /*border: 2px solid black;*/
-
-
-
 }
 
 .card-item img
@@ -520,6 +528,95 @@ section skills
     text-transform: capitalize;
 }
 
+/*-----------------------------
+galery
+-------------------------------*/
+#gallery
+{
+     height: auto;
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     align-items: center;
+     /*border: 1px solid black;*/
+}
+
+#gallery h2
+{
+    font-family: 'open_sansbold', Arial, sans-serif;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    /*margin-bottom: 30px;*/
+    margin-top: 20px;
+}
+
+#gallery p
+{
+     width: 100%;
+     /*border: 1px solid black;*/
+     display: flex;
+     padding: 1em;
+     line-height: 1.2;
+     justify-content: center;
+     font-family: 'open_sansregular', Arial, sans-serif;
+}
+
+.gallery-details
+{
+     margin: auto;
+    max-width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: #fffcfc;
+    border-radius: 10px;
+}
+
+.gallery-items
+{
+    flex: 1 1 calc(30% - 20px);
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s;
+    border-radius: 10px;
+}
+
+.gallery-items img
+{
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    opacity: 0.6;
+}
+
+.gallery-items:hover {
+    transform: scale(1.02);
+}
+
+.gallery-items:hover img {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*----------------------------------
  Breakpoints / responsive style 
  ----------------------------------*/
@@ -556,11 +653,17 @@ section skills
       width: 70%;
       position: none;
    }
+
+
+
 }
 
 /* mobile phone */
 @media screen and (max-width: 480px) 
 {
+    /*------------------------ 
+    navigation 
+    --------------------------*/
    header
    {
      padding: .1em;
@@ -600,7 +703,9 @@ section skills
      /*background-color: white;*/
    }
 
-  /* hero section */
+  /*----------------------------
+   hero section 
+   -----------------------------*/
 .content
 {
      /*border: 1px solid white;*/
@@ -625,7 +730,17 @@ section skills
     width: 22%;
 }
 
-/* about me */
+/*-------------------- 
+about me 
+----------------------*/
+ #about
+ {
+   /* height: auto;*/
+    /*position: relative;*/
+ }
+
+
+
   .content-about
   {
       flex-direction: column;
@@ -643,4 +758,126 @@ section skills
       text-align: initial;
   }
 
+
+
+/*--------------------------
+  skills
+----------------------------*/
+#skills
+{
+   border: 1px solid black;
+   height: auto;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+}
+
+
+
+ .row
+  {
+    display: flex;
+    flex-direction: column;
+ }
+
+
+
+/*-------------------
+ Portfolio
+--------------------*/
+#portfolio
+{
+    height: auto;
+}
+
+.portfolio-details
+{
+     flex-direction: column;
+}
+
+/* Galery */
+.gallery-details
+{
+    align-items: center;
+}
+
+.gallery-items
+{
+       flex: 1 1 calc(100% - 40px);
+}
+
+}
+
+
+
+
+
+
+
+@media screen and(max-width: 320px)
+{
+ /* skills */
+#skills h2
+{
+    font-family: 'open_sansbold', Arial, sans-serif;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    /*margin-bottom: 30px;*/
+}
+
+#skills p
+{
+     width: 100%;
+     /*border: 1px solid black;*/
+     max-width: 65ch;
+     display: flex;
+     /*margin: 0 auto;*/
+     padding: 1em;
+     line-height: 1.2;
+}
+
+.skill-details
+{
+    /*border: 1px solid black;*/
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'open_sansregular', Arial, sans-serif;
+    margin: 10px 0;
+    /*word-wrap: break-word;*/
+}
+
+.row
+{
+  /*border: 1px solid black;*/
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.basic,
+.framework,
+.backend,
+.design,
+.database,
+.extra
+
+{
+     text-align: center;
+     text-transform: capitalize;
+}
+
+.icon
+{
+    width: 20px;
+}
+
+.title-skills
+{
+    font-size: 1.2rem;
+    font-family: 'open_sanssemibold', Arial, sans-serif;
+    /*margin: 10px 0;*/
+}
 }
