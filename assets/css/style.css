@@ -643,7 +643,7 @@ Blog
 .blog-details
 {
     background-color: #fffcfc;
-    border: 1px solid black;
+/*    border: 1px solid black;*/
     margin: auto;
     max-width: 900px;
     display: flex;
@@ -656,12 +656,14 @@ Blog
 
 .blog-item
 {
-    flex: 1 1 calc(30% - 20px);
+    flex: 1 1 calc(50% - 20px);
     overflow: hidden;
     cursor: pointer;
     transition: transform 0.3s;
     border-radius: 10px;
-    /*border: 1px solid black;*/
+    border: 1px solid black;
+    padding: 10px;
+
 }
 
 .blog-item img
@@ -671,8 +673,21 @@ Blog
     display: block;
     object-fit: cover;
     /*aspect-ratio: 16 / 9;*/
+    border-radius: 10px; 
 }
 
+.blog-item figcaption
+{
+     font-family: 'open_sanssemibold', Arial, sans-serif;
+     font-size: 1.1rem;
+     margin-top: 10px;
+}
+
+.blog-item p
+{
+     line-height: 1.2;
+     font-family: 'open_sansregular', Arial, sans-serif;
+}
 
 
 
