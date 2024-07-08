@@ -274,7 +274,12 @@ header.scrolled
 /*--------------------------
 about section
 ---------------------------*/
-section#about
+section
+{
+     border: 1px solid black;
+}
+
+#about
 {
      height: 100vh;
      /*border: 1px solid black;*/
@@ -546,6 +551,9 @@ galery
      flex-direction: column;
      align-items: center;
      /*border: 1px solid black;*/
+/*     margin-bottom: 20px;*/
+      padding-top: 2rem;
+      padding-bottom: 2rem;
 }
 
 #gallery h2
@@ -554,7 +562,7 @@ galery
     font-size: 1.8rem;
     text-transform: capitalize;
     /*margin-bottom: 30px;*/
-    margin-top: 20px;
+/*    margin-top: 20px;*/
 }
 
 #gallery p
@@ -562,7 +570,8 @@ galery
      width: 100%;
      /*border: 1px solid black;*/
      display: flex;
-     padding: 1em;
+/*     padding: 1em;*/
+     margin: 10px 0;
      line-height: 1.2;
      justify-content: center;
      font-family: 'open_sansregular', Arial, sans-serif;
@@ -618,6 +627,8 @@ Blog
      flex-direction: column;
      align-items: center;
      /*border: 1px solid black;*/
+     padding-top: 2rem;
+     padding-bottom: 2rem;
 }
 
 #blog h2
@@ -626,7 +637,7 @@ Blog
     font-size: 1.8rem;
     text-transform: capitalize;
     /*margin-bottom: 30px;*/
-    margin-top: 20px;
+/*    margin-top: 20px;*/
 }
 
 .blogP
@@ -634,7 +645,8 @@ Blog
      width: 100%;
      /*border: 1px solid black;*/
      display: flex;
-     padding: 1em;
+/*     padding: 1em;*/
+      margin: 10px 0;
      line-height: 1.2;
      justify-content: center;
      font-family: 'open_sansregular', Arial, sans-serif;
@@ -661,7 +673,7 @@ Blog
     cursor: pointer;
     transition: transform 0.3s;
     border-radius: 10px;
-    border: 1px solid black;
+    box-shadow: 0 0 0 0.2rem rgba(105, 90, 166, 0.25);
     padding: 10px;
 
 }
@@ -679,7 +691,7 @@ Blog
 .blog-item figcaption
 {
      font-family: 'open_sanssemibold', Arial, sans-serif;
-     font-size: 1.1rem;
+     font-size: 1.2rem;
      margin-top: 10px;
 }
 
@@ -689,9 +701,24 @@ Blog
      font-family: 'open_sansregular', Arial, sans-serif;
 }
 
+.blog-item .itemP1
+{
+     font-size: .8rem;
+     margin: 5px 0;
+}
 
-
-
+/*-----------------
+contact
+-------------------*/
+#contact
+{
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     align-items: center;
+     /*border: 1px solid black;*/
+}
 
 
 
