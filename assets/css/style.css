@@ -69,7 +69,10 @@ main
 header
 {
 	font-family: sans-serif;
-	padding: .6em;
+	padding-right: .8em;
+    padding-left: .8em;
+    padding-top: .5em;
+    padding-bottom: .5em;
     /*background-color: #eee;*/
     background-color: transparent;
     position: fixed;
@@ -101,7 +104,6 @@ nav
     color: #f8f7f4;
 /*    background-color: transparent;*/
 
-    
 }
 
 nav ul
@@ -186,12 +188,11 @@ hero-section
      background-image: linear-gradient(to bottom, rgba(0, 0, 0, .8), rgba(0, 0, 0, .6)), url('../images/hero-image.jpg') ;
      background-color: #f8f7f4;
      border: 1px solid black;
-     
 }
 
 .content
 {
-     /*border: 1px solid white;*/
+     border: 1px solid white;
      width: 40%;
      height: 35%;
      display: flex;
@@ -212,7 +213,8 @@ hero-section
 
 .content h3
 {
-     font-size: 3.5rem;  
+     font-size: calc(3vw + 1.5rem);
+     border: 1px solid black;
      /*text-align: center;*/
      color: #f8f7f4;
      position: relative;
@@ -266,11 +268,6 @@ header.scrolled
 /*--------------------------
 about section
 ---------------------------*/
-section
-{
-     border: 1px solid black;
-}
-
 #about
 {
      height: 100vh;
@@ -474,8 +471,7 @@ section skills
      padding: 1em;
      line-height: 1.2;
      justify-content: center;
-    font-family: 'open_sansregular', Arial, sans-serif;
-
+     font-family: 'open_sansregular', Arial, sans-serif;
 }
 
 .portfolio-details
@@ -790,19 +786,19 @@ contact
 
 .form-group input:focus
 {
-    border-color: #66afe9;
+    border-color: #b4add3;;
     outline: 0;
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 0 2px rgba(105, 90, 166, 0.25);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 0 2px rgba(105, 90, 166, 0.25);
 }
 
 
 .form-group textarea:focus
 {
-    border-color: #66afe9;
+    border-color: #b4add3;
     outline: 0;
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 0 2px rgba(105, 90, 166, 0.25);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 0 2px rgba(105, 90, 166, 0.25);
 } 
 
 /*-------------------
@@ -853,20 +849,113 @@ footer p
 
 @media screen and (max-width: 991px) 
 {
+
+/*   header
+{
+    padding-right: 1em;
+    padding-left: 1em;
+}*/
+nav
+{
+    border: 1px solid yellow;
+}
+
    nav ul
    {
       width: 50%;
    }
+
+  .sosial-media
+{
+    /*border: 1px solid black;*/
+    width: 25%;
+} 
+
+
 }
 
-@media screen and (max-width: 768px) 
+@media screen and (max-width: 830px) 
 {
+
+
+/* navigation */
+header
+{
+   
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+   nav
+{
+    justify-content: space-evenly;
+    border: 1px solid yellow;
+
+} 
     nav ul
    {
       width: 70%;
       position: none;
    }
 
+  section
+  {
+     border: 1px solid black;
+  }
+/* about */
+#about
+{
+     height: auto;
+     padding-top: 2em;
+     padding-bottom: 2em;
+}
+
+/* skills */
+#skills
+{
+    height: auto;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.skill-details
+{
+    min-width: 60%;
+}
+
+
+/* hero */
+#hero
+{
+    height: auto;
+    min-height: 600px;
+}
+.content
+{
+     width: 60%;
+     height: 200px;
+}
+
+.sosial-media
+{
+    /*border: 1px solid black;*/
+    width: 20%;
+}
+
+/* portfolio */
+  #portfolio
+  {
+     height: auto;
+  }
+
+ .portfolio-details
+{
+   flex-wrap: wrap;
+   border:1px solid black;
+   align-items: center;
+   justify-content: center;
+}
+ 
 
 
 }
@@ -969,14 +1058,12 @@ about me
       text-align: initial;
   }
 
-
-
 /*--------------------------
   skills
 ----------------------------*/
 #skills
 {
-   border: 1px solid black;
+/*   border: 1px solid black;*/
    height: auto;
    display: flex;
    justify-content: center;
@@ -984,9 +1071,7 @@ about me
    align-items: center;
 }
 
-
-
- .row
+.row
   {
     display: flex;
     flex-direction: column;
@@ -1000,9 +1085,20 @@ about me
     height: auto;
 }
 
+#portfolio p
+{
+/*     padding: 1em;*/
+/*     line-height: 1.2;*/
+}
+
 .portfolio-details
 {
      flex-direction: column;
+}
+
+#portfolio h2
+{
+   padding-top: 1.5em;
 }
 
 /* Galery */
