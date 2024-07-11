@@ -187,12 +187,12 @@ hero-section
      background-size: cover;
      background-image: linear-gradient(to bottom, rgba(0, 0, 0, .8), rgba(0, 0, 0, .6)), url('../images/hero-image.jpg') ;
      background-color: #f8f7f4;
-     border: 1px solid black;
+/*     border: 1px solid black;*/
 }
 
 .content
 {
-     border: 1px solid white;
+/*     border: 1px solid white;*/
      width: 40%;
      height: 35%;
      display: flex;
@@ -214,7 +214,7 @@ hero-section
 .content h3
 {
      font-size: calc(3vw + 1.5rem);
-     border: 1px solid black;
+/*     border: 1px solid black;*/
      /*text-align: center;*/
      color: #f8f7f4;
      position: relative;
@@ -857,7 +857,7 @@ footer p
 }*/
 nav
 {
-    border: 1px solid yellow;
+/*    border: 1px solid yellow;*/
 }
 
    nav ul
@@ -889,7 +889,7 @@ header
    nav
 {
     justify-content: space-evenly;
-    border: 1px solid yellow;
+/*    border: 1px solid yellow;*/
 
 } 
     nav ul
@@ -900,7 +900,7 @@ header
 
   section
   {
-     border: 1px solid black;
+/*     border: 1px solid black;*/
   }
 /* about */
 #about
@@ -951,7 +951,7 @@ header
  .portfolio-details
 {
    flex-wrap: wrap;
-   border:1px solid black;
+/*   border:1px solid black;*/
    align-items: center;
    justify-content: center;
 }
@@ -1008,6 +1008,10 @@ header
   /*----------------------------
    hero section 
    -----------------------------*/
+#hero
+{
+     height: 100vh;
+}   
 .content
 {
      /*border: 1px solid white;*/
