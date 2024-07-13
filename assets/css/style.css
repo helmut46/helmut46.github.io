@@ -1,7 +1,7 @@
 html {
     position: relative;
 }
-
+/* open sans */
 @font-face {
     font-family: 'open_sansregular';
     src: url('../fonts/openSans/opensans_regular_macroman/OpenSans-Regular-webfont.woff') format('woff');
@@ -31,18 +31,30 @@ html {
     font-style: normal;
 }
 
+/* Webfont: MangoGrotesque-Bold */
 @font-face {
-    font-family: 'Alex_Brush';
-    src: url('../fonts/AlexBrush/AlexBrush-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+    font-family: 'MangoGrotesque';
+    src: url('../fonts/mango/MangoGrotesque-Bold.woff2') format('woff2');
+   font-style: normal;
+    font-weight: bold;
 }
 
+
+/* deserta */
 @font-face {
     font-family: 'deserta';
     src: url('../fonts/deserta/deserta-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}
+
+/* variables */
+:root
+{
+   
+/*    --font-heading:'MangoGrotesque', Arial, sans-serif;*/
+    --font-heading:'open_sansbold', Arial, sans-serif;
+;
 }
 
 body {
@@ -51,7 +63,7 @@ body {
     font-size: 1rem;
     margin-bottom: 120px;
     /*    margin-top: 30px;*/
-    overflow: hidden;
+/*    overflow: hidden;*/
 }
 
 main {
@@ -262,7 +274,7 @@ about section
 }
 
 #about h2 {
-    font-family: 'open_sansbold', Arial, sans-serif;
+    font-family: var(--font-heading);
     font-size: 1.8rem;
     text-transform: capitalize;
     /*margin-bottom: 10px;*/
@@ -352,7 +364,7 @@ section skills
 }
 
 #skills h2 {
-    font-family: 'open_sansbold', Arial, sans-serif;
+    font-family: var(--font-heading);
     font-size: 1.8rem;
     text-transform: capitalize;
     /*margin-bottom: 30px;*/
@@ -429,7 +441,7 @@ section skills
 
 
 #portfolio h2 {
-    font-family: 'open_sansbold', Arial, sans-serif;
+    font-family: var(--font-heading);
     font-size: 1.8rem;
     text-transform: capitalize;
     /*margin-bottom: 30px;*/
@@ -532,7 +544,7 @@ galery
 }
 
 #gallery h2 {
-    font-family: 'open_sansbold', Arial, sans-serif;
+    font-family: var(--font-heading);
     font-size: 1.8rem;
     text-transform: capitalize;
     /*margin-bottom: 30px;*/
@@ -595,6 +607,7 @@ galery
     height: 100%;
     z-index: 1000;
     overflow-y: hidden;
+    display: none;
 }
 
 .modal-content{
@@ -618,7 +631,7 @@ galery
 }
 
 .modal-left img {
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
     float: left;
     border-radius: 10px;
@@ -649,7 +662,7 @@ Blog
 }
 
 #blog h2 {
-    font-family: 'open_sansbold', Arial, sans-serif;
+    font-family: var(--font-heading);
     font-size: 1.8rem;
     text-transform: capitalize;
     /*margin-bottom: 30px;*/
@@ -729,7 +742,7 @@ contact
 }
 
 #contact h2 {
-    font-family: 'open_sansbold', Arial, sans-serif;
+    font-family: var(--font-heading);
     font-size: 1.8rem;
     text-transform: capitalize;
     margin-bottom: 30px;

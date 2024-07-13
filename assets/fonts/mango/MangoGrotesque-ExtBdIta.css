@@ -1,0 +1,9 @@
+/* Webfont: MangoGrotesque-ExtBdIta */@font-face {
+    font-family: 'MangoGrotesqueExtBdIta';
+    src: url('MangoGrotesque-ExtBdIta.woff2') format('woff2'), /* Modern Browsers */
+         url('MangoGrotesque-ExtBdIta.otf') format('opentype'); /* Safari, Android, iOS */
+             font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

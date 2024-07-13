@@ -1,0 +1,9 @@
+/* Webfont: MangoGrotesque-MediumItalic */@font-face {
+    font-family: 'MangoGrotesqueMedIta';
+    src: url('MangoGrotesque-MediumItalic.woff2') format('woff2'), /* Modern Browsers */
+         url('MangoGrotesque-MediumItalic.otf') format('opentype'); /* Safari, Android, iOS */
+             font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

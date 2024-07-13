@@ -108,3 +108,44 @@ window.onload = function() {
 }());
 
 // Gallery
+const images = [
+    {
+        src: 'assets/images/gallery/1.jpg',
+        text: 'my picture'                                                         
+     },  
+     {
+        src: 'assets/images/gallery/2.jpg',
+        text: 'Lorem ipsum dolor sit amet elit.'                                                         
+     },  
+     {
+        src: 'assets/images/gallery/3.jpg',
+        text: 'Lorem ipsum dolor sit amet elit.'                                                         
+     }, 
+     {
+        src: 'assets/images/gallery/4.jpg',
+        text: 'Lorem ipsum dolor sit amet elit.'                                                         
+     },  
+     {
+        src: 'assets/images/gallery/5.jpg',
+        text: 'Lorem ipsum dolor sit amet elit.'                                                         
+     },
+      {
+        src: 'assets/images/gallery/4.jpg',
+        text: 'Lorem ipsum dolor sit amet elit.'                                                         
+     }
+];
+
+let currentIndex = 0;
+const openModal = document.querySelectorAll('.gallery-items');
+const modal = document.getElementById('modal');
+const modalImage = document.getElementById('modal-img');
+const modalText = document.getElementById('modal-text');
+
+for(let i = 0; i < openModal.length; i++){
+     openModal[i].addEventListener('click', function(){
+          modalImage.src = images[i].src;
+          console.log(modalImage);
+          modalText.innerText = images[i].text; 
+          modal.style.display = 'block';
+     });
+};

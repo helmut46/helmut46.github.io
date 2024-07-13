@@ -1,0 +1,9 @@
+/* Webfont: MangoGrotesque-ExtraBold */@font-face {
+    font-family: 'MangoGrotesqueExtBd';
+    src: url('MangoGrotesque-ExtraBold.woff2') format('woff2'), /* Modern Browsers */
+         url('MangoGrotesque-ExtraBold.otf') format('opentype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

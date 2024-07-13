@@ -1,0 +1,9 @@
+/* Webfont: MangoGrotesque-Thin */@font-face {
+    font-family: 'MangoGrotesqueThin';
+    src: url('MangoGrotesque-Thin.woff2') format('woff2'), /* Modern Browsers */
+         url('MangoGrotesque-Thin.otf') format('opentype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

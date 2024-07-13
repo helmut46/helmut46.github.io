@@ -1,0 +1,9 @@
+/* Webfont: MangoGrotesque-BlackItalic */@font-face {
+    font-family: 'MangoGrotesqueBlackIta';
+    src: url('MangoGrotesque-BlackItalic.woff2') format('woff2'), /* Modern Browsers */
+         url('MangoGrotesque-BlackItalic.otf') format('opentype'); /* Safari, Android, iOS */
+             font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
