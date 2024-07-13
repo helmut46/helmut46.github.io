@@ -104,9 +104,7 @@ window.onload = function() {
             });
         });
     };
-       
- 
-
-
     scrollTo();
 }());
+
+// Gallery
