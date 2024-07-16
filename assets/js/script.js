@@ -110,28 +110,28 @@ window.onload = function() {
 // Gallery
 const images = [
     {
-        src: 'assets/images/gallery/1.jpg',
-        text: 'my picture'                                                         
+        src: 'assets/images/gallery/spring.jpg',
+        text: 'spring.'                                                         
      },  
      {
-        src: 'assets/images/gallery/2.jpg',
-        text: 'Lorem ipsum dolor sit amet elit.'                                                         
+        src: 'assets/images/gallery/forest.jpg',
+        text: 'forest.'                                                         
      },  
      {
-        src: 'assets/images/gallery/3.jpg',
-        text: 'Lorem ipsum dolor sit amet elit.'                                                         
+        src: 'assets/images/gallery/lavender-field.jpg',
+        text: 'lavender-field.'                                                         
      }, 
      {
-        src: 'assets/images/gallery/4.jpg',
-        text: 'Lorem ipsum dolor sit amet elit.'                                                         
+        src: 'assets/images/gallery/summer.jpg',
+        text: 'summer.'                                                         
      },  
      {
-        src: 'assets/images/gallery/5.jpg',
-        text: 'Lorem ipsum dolor sit amet elit.'                                                         
+        src: 'assets/images/gallery/winter.jpg',
+        text: 'winter.'                                                         
      },
       {
-        src: 'assets/images/gallery/4.jpg',
-        text: 'Lorem ipsum dolor sit amet elit.'                                                         
+        src: 'assets/images/gallery/wooden-bridge.jpg',
+        text: 'wooden-bridge.'                                                         
      }
 ];
 
@@ -140,12 +140,33 @@ const openModal = document.querySelectorAll('.gallery-items');
 const modal = document.getElementById('modal');
 const modalImage = document.getElementById('modal-img');
 const modalText = document.getElementById('modal-text');
+const close = document.querySelector('.close');
+const prevBtn = document.querySelector('.prevBtn')
+const nextBtn = document.querySelector('.nextBtn')
 
 for(let i = 0; i < openModal.length; i++){
      openModal[i].addEventListener('click', function(){
           modalImage.src = images[i].src;
-          console.log(modalImage);
+          // console.log(modalImage);
           modalText.innerText = images[i].text; 
           modal.style.display = 'block';
+          document.body.style.overflow = 'hidden';
      });
 };
+
+close.addEventListener('click', function(){
+     modal.style.display = 'none'; 
+      document.body.removeAttribute('style', 'overflow : hidden');
+});
+
+prevBtn.addEventListener('click', function(){
+    currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
+       modalImage.src = images[currentIndex].src;
+       modalText.innerText = images[currentIndex].text; 
+})
+
+nextBtn.addEventListener('click', function(){
+    currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
+     modalImage.src = images[currentIndex].src;
+     modalText.innerText = images[currentIndex].text; 
+})
