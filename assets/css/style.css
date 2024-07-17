@@ -290,7 +290,7 @@ about section
 
 .content-about {
     display: flex;
-    border: 1px solid black;
+/*    border: 1px solid black;*/
     /*height: 50vw;*/
     justify-content: center;
     /*margin-top: 50px;*/
@@ -306,7 +306,7 @@ about section
 }
 
 .profile-details {
-    border: 1px solid black;
+/*    border: 1px solid black;*/
     /*flex: 1;*/
     padding: 1em;
     max-width: 40ch;
@@ -366,11 +366,8 @@ about section
 
 .wrapper{
     position: absolute;
-    bottom: 0;
-/*    background-color: blue;*/
-/*    height: 300px;*/
-       width: 100%;
-/*    overflow: hidden;*/
+    bottom: -30px;
+    width: 100%;
 }
 
 .custom-shape-divider-bottom-1721110323 {
@@ -380,20 +377,21 @@ about section
     width: 100%;
     overflow: hidden;
     line-height: 0;
-    transform: rotate(180deg);
+    transform: rotate(-180deg);
 }
 
 .custom-shape-divider-bottom-1721110323 svg {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 100px;
+    height: 200px;
     transform: rotateY(180deg);
 }
 
 .custom-shape-divider-bottom-1721110323 .shape-fill {
     fill: #f8f7f4;
 }
+
 /*------------------
 section skills
 --------------------*/
@@ -406,37 +404,6 @@ section skills
 /*    border: 1px solid black;*/
     position: relative;
 }
-
-.shape-skills{
-    position: absolute;
-    bottom: -20px;
-    background-color: #f8f7f4;
-/*    height: 10px;*/
-       width: 100%;
-/*    overflow: hidden;*/
-}
-.custom-shape-divider-top-1721110972 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
-
-.custom-shape-divider-top-1721110972 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 99;
-}
-
-.custom-shape-divider-top-1721110972 .shape-fill {
-    fill: #EEEDEB;
-}
-
-
 #skills h2 {
     font-family: var(--font-heading);
     font-size: 1.8rem;
@@ -457,7 +424,7 @@ section skills
 }
 
 .skill-details {
-    border: 1px solid black;
+/*    border: 1px solid black;*/
     min-width: 50%;
     display: flex;
     justify-content: center;
@@ -501,7 +468,6 @@ section skills
     font-family: 'open_sanssemibold', Arial, sans-serif;
     margin: 10px 0;
 }
-
 /*--------------------------
  portfolio
 ---------------------------*/
@@ -512,12 +478,8 @@ section skills
     flex-direction: column;
     align-items: center;
     background-color: #EEEDEB;
-/*    position: relative;*/
+    position: relative;
 }
-
-
-
-
 
 #portfolio h2 {
     font-family: var(--font-heading);
@@ -538,14 +500,9 @@ section skills
 
 .portfolio-details {
     align-items: center;
-    /*width: 50%;*/
-/*    height: 500px;*/
     display: flex;
-/*    padding: 1em;*/
     column-gap: 10px;
     max-width: 900px;
-/*    border: 1px solid black;*/
-/*    overflow: hidden;*/
 }
 
 .card-item {
@@ -606,6 +563,34 @@ section skills
     text-transform: capitalize;
 }
 
+.wave-skills{
+    position: absolute;
+    top: -30px;
+    width: 100%;
+}
+
+.custom-shape-skills {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-skills svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-skills .shape-skills {
+    fill: #f8f7f4;
+}
+
 /*-----------------------------
 galery
 -------------------------------*/
@@ -620,6 +605,8 @@ galery
     padding-top: 2rem;
     padding-bottom: 2rem;
 /*    position: relative;*/
+  background-color: #f8f7f4;
+  position: relative;
 }
 
 #gallery h2 {
@@ -752,6 +739,36 @@ galery
 .nextBtn{
     border: 1px solid #fffcfc;
 }
+
+.wave-gallery{
+    position: absolute;
+    top: -130px;
+    width: 100%;
+}
+
+.custom-shape-gallery {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-gallery svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-gallery .shape-gallery {
+    fill: #f8f7f4;
+/*    fill: red;*/
+}
+
 /*-------------------------
 Blog
 --------------------------*/
@@ -956,12 +973,19 @@ footer p {
 
 
 
+
+
+
+
+
+
+
 /*----------------------------------
  Breakpoints / responsive style 
  ----------------------------------*/
 
 @media screen and (min-width: 1200px) {
-
+/* about */
 #about h2 {
     font-family: var(--font-heading);
     font-size: 1.9rem;
@@ -972,11 +996,28 @@ footer p {
 }
 
 .profile-details {
-    font-size: 1.5rem;
-    border:1px solid black;
+    font-size: 1.3rem;
+/*    border:1px solid black;*/
 
 }
 
+/* skills */
+#skills h2 {
+    font-family: var(--font-heading);
+    font-size: 1.9rem;
+}
+
+#skills p {
+    font-size: 1.3rem;
+}
+
+.icon {
+    width: 60px;
+
+}
+.title-skills {
+    font-size: 1.7rem;
+}
 
 }
 
