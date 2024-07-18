@@ -86,7 +86,7 @@ header {
     right: 0;
     top: 0;
     /*    bottom: 0;*/
-    z-index: 2;
+    z-index: 10;
     /*display: none;*/
 }
 
@@ -116,6 +116,19 @@ nav ul {
     justify-content: space-between;
     /*border: 1px solid black;*/
 }
+
+.navigation ul li {
+/*    transform: scale(.8);*/
+      transition: all .3s;
+}
+
+.navigation ul li:hover {
+    transform: scale(1.2);
+}
+
+
+
+
 
 /*------------------- 
 hamburger menu 
@@ -314,6 +327,7 @@ about section
     align-self: center;
     font-family: 'open_sansregular', Arial, sans-serif;
 /*     margin: auto;*/
+
 }
 
 .btn {
@@ -328,6 +342,9 @@ about section
     letter-spacing: 1.5px;
     transition: all .5s;
     font-family: 'open_sanslight', Arial, sans-serif;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
 }
 
 .btn-sm {
@@ -654,6 +671,7 @@ galery
     display: block;
     object-fit: cover;
     opacity: 0.6;
+    filter: grayscale(1);
 }
 
 .gallery-items:hover {
@@ -662,6 +680,7 @@ galery
 
 .gallery-items:hover img {
     opacity: 1;
+filter: grayscale(0);
 }
 
 .modal{
