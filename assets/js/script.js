@@ -170,3 +170,37 @@ nextBtn.addEventListener('click', function(){
      modalImage.src = images[currentIndex].src;
      modalText.innerText = images[currentIndex].text; 
 })
+
+// scroll events active 
+document.addEventListener('DOMContentLoaded', function() {
+      const sections = document.querySelectorAll('section');
+      const navigation = document.querySelector('header');
+      const navLinks = navigation.querySelectorAll('a');
+      const navHeight = navigation.offsetHeight;
+
+       // Scroll event listener
+    window.addEventListener('scroll', function() {
+        const curPos = window.scrollY || window.pageYOffset;
+
+        sections.forEach(function(section) {
+            const top = section.offsetTop - navHeight;
+            const bottom = top + section.offsetHeight;
+
+            if (curPos >= top && curPos <= bottom) {
+                navLinks.forEach(function(link) {
+                    link.classList.remove('active');
+                });
+                sections.forEach(function(sec) {
+                    sec.classList.remove('active');
+                });
+
+                section.classList.add('active');
+                navigation.querySelector('a[href="#'+section.getAttribute('id')+'"]').classList.add('active');
+            }
+        });
+    });
+
+
+});
+
+    
