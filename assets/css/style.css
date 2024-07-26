@@ -193,7 +193,7 @@ hero-section
     align-items: center;
     /*background-image: url('../images/hero-image.png');*/
     background-size: cover;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .8), rgba(0, 0, 0, .6)), url('../images/hero-image.png');
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .8), rgba(0, 0, 0, .6)), url('../images/hero-image.webp');
     background-color: #f8f7f4;
     /*     border: 1px solid black;*/
 }
